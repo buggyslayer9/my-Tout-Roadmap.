@@ -1,0 +1,37 @@
+# Compiled object files
+*.o
+*.obj
+
+# Executables
+*.out
+*.exe
+*.app
+
+# Build directories
+build/
+_build/
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Debug files
+*.dSYM/
+core
+vgcore.*
+
+# GTK4 build artifacts
+*.gresource
+*.gschema.compiled
+
+# Meson build
+builddir/
+subprojects/
