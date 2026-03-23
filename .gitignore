@@ -22,7 +22,7 @@ _build/
 *~
 .vscode/
 .idea/
-
+.vs/
 # Debug files
 *.dSYM/
 core

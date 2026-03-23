@@ -1,169 +1,172 @@
-# 🖥️ Complete Developer Roadmap — From C to COSMIC
+# Complete Developer Roadmap: From C to COSMIC and Beyond
 
-**From Zero to Professional Linux Developer** — A comprehensive 50-chapter curriculum covering C, GTK4, Rust, Linux internals, COSMIC desktop, web development, mobile apps, and DevOps.
+From zero to a wide, hands-on developer skill set. This repository is a broad 60-chapter curriculum covering C, GTK4, Rust, Linux internals, COSMIC desktop development, web development, Flutter, and DevOps.
 
-> **Author**: Ayman Salem — *Building the skills to create custom Linux distros, COSMIC apps, and full-stack solutions*
+> Author: Ayman Salem
+>
+> Goal: build real systems, desktop apps, web apps, mobile apps, and deployment skills without narrowing the course too early.
 
----
+## Overview
 
-## 📋 Overview
+This course is intentionally wide. It is designed for learners who want strong foundations first, then multiple applied tracks.
 
-This course contains **50 chapters** organized in **8 phases**:
+Each chapter folder includes:
 
-| Phase | Chapters | Focus | Language |
-|-------|----------|-------|----------|
-| **Phase 1** | 1–10 | C Programming Fundamentals | C |
-| **Phase 2** | 11–20 | GTK4 GUI Programming | C |
-| **Phase 3** | 21–26 | Rust Programming | Rust |
-| **Phase 4** | 27–32 | Linux Internals & Custom Distro | C / Bash |
-| **Phase 5** | 33–36 | COSMIC Desktop & Wayland | Rust |
-| **Phase 6** | 37–42 | Web Development (Full-Stack) | JS / Rust |
-| **Phase 7** | 43–46 | Mobile Development (Flutter) | Dart |
-| **Phase 8** | 47–50 | DevOps & Open Source | Git / YAML |
+- lesson files
+- an assignment
+- example code when relevant
+- `00_learning_guide.md` with learning goals, self-checks, and a suggested follow-up project
 
-Each chapter contains:
-- 📖 **Lesson files** — Concepts with code examples and explanations
-- 📝 **Assignment** — Hands-on practice exercise
-- 💻 **Example source code** — Compilable source files in `examples/`
+You can also use [PROJECTS.md](/C:/Users/Buggy/source/repos/my-Tout-Roadmap/PROJECTS.md) to see the major milestone projects that fit after specific chapters.
 
-## 🔧 Prerequisites
+## How To Study
 
-| Tool | Purpose | Install (Ubuntu/Debian) |
-|------|---------|------------------------|
-| GCC | C Compiler | `sudo apt install gcc` |
+1. Start at Chapter 1 and move in order.
+2. Read the lesson files for the chapter.
+3. Open the chapter's `00_learning_guide.md`.
+4. Type at least one example by hand.
+5. Complete the assignment before moving on.
+6. Build the suggested small project when you finish a chapter or milestone.
+
+## Prerequisites
+
+Common tools used across the roadmap:
+
+| Tool | Purpose | Example Install (Ubuntu/Debian) |
+|---|---|---|
+| GCC | C compiler | `sudo apt install gcc` |
 | GDB | Debugger | `sudo apt install gdb` |
 | Valgrind | Memory checker | `sudo apt install valgrind` |
 | Make | Build system | `sudo apt install make` |
-| GTK4 | GUI toolkit (Phase 2) | `sudo apt install libgtk-4-dev` |
-| pkg-config | Library flags | `sudo apt install pkg-config` |
-| Rust | Phases 3, 5, 6 | `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \| sh` |
-| Node.js | Web development (Phase 6) | `sudo apt install nodejs npm` |
-| Flutter | Mobile dev (Phase 7) | `sudo snap install flutter --classic` |
+| GTK4 | GUI toolkit | `sudo apt install libgtk-4-dev` |
+| pkg-config | Compiler and linker flags | `sudo apt install pkg-config` |
+| Rust | Rust compiler and cargo | `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` |
+| Node.js and npm | Web tooling | `sudo apt install nodejs npm` |
+| Flutter | Mobile development | `sudo snap install flutter --classic` |
 
-### macOS (Homebrew)
-```bash
-brew install gcc gdb gtk4 pkg-config rust node
-```
+## Course Structure
 
-### Fedora
-```bash
-sudo dnf install gcc gdb valgrind make gtk4-devel rust cargo nodejs
-```
+### Phase 1: C Foundations
 
-## 🚀 Getting Started
+| # | Chapter | Focus |
+|---|---|---|
+| 1 | Introduction to C | what C is, compilation, first program |
+| 2 | Variables, Data Types, and Operators | types, constants, casts, operators |
+| 3 | Control Flow | branching and loops |
+| 4 | Functions | decomposition, recursion, scope |
+| 5 | Arrays and Strings | arrays, C strings, safer input |
+| 6 | Pointers and Memory | addresses, dereferencing, references |
+| 7 | Dynamic Memory | malloc, realloc, free, common bugs |
+| 8 | Structs, Unions, and Enums | data modeling in C |
+| 9 | File I/O | text and binary files |
+| 10 | Advanced C | headers, macros, debugging, Makefiles |
 
-1. Clone this repository
-2. Start with `chapter_01_introduction_to_c/`
-3. Read each lesson file in order (01, 02, 03...)
-4. Complete the assignment before moving to the next chapter
-5. Compile examples with:
+### Phase 2: GTK4 and Desktop App Development
 
-```bash
-# Phase 1 (C only)
-gcc -Wall -Wextra -std=c11 example.c -o example
+| # | Chapter | Focus |
+|---|---|---|
+| 11 | Introduction to GTK4 | first GTK4 app and lifecycle |
+| 12 | Widgets and Layouts | common widgets and layout patterns |
+| 13 | Signals and Callbacks | event-driven GUI programming |
+| 14 | Dialogs and Message Boxes | alerts, file pickers, input flows |
+| 15 | Drawing with Cairo | custom drawing and redraws |
+| 16 | GLib Data Structures | lists, hash tables, timers, strings |
+| 17 | CSS Styling | styling GTK applications |
+| 18 | Complete GTK4 App | organize and build a real desktop app |
+| 19 | Advanced GTK4 | richer widgets, settings, async work |
+| 20 | Capstone Project | a polished desktop application |
 
-# Phase 2 (GTK4)
-gcc `pkg-config --cflags gtk4` example.c `pkg-config --libs gtk4` -o example
+### Phase 3: Rust Core
 
-# Phase 3+ (Rust)
-cargo new my_project && cd my_project && cargo run
-```
+| # | Chapter | Focus |
+|---|---|---|
+| 21 | Introduction to Rust | toolchain, cargo, syntax basics |
+| 22 | Ownership and Borrowing | ownership model, references, lifetimes |
+| 23 | Structs and Enums | data modeling in Rust |
+| 24 | Error Handling and Collections | Result, Vec, HashMap, iterators |
+| 25 | Traits and Generics | reusable Rust design |
+| 26 | Concurrency, Async, and FFI | async work, concurrency, interop |
 
-## 📚 Chapter Index
+### Phase 4: Systems, Linux, and Platform Engineering
 
-### Phase 1 — C Programming Fundamentals
-| # | Chapter | Key Topics |
-|---|---------|------------|
-| 1 | Introduction to C | Hello World, compilation pipeline, printf |
-| 2 | Variables & Data Types | int, float, char, sizeof, operators |
-| 3 | Control Flow | if/else, switch, for/while loops |
-| 4 | Functions | Prototypes, recursion, scope, static |
-| 5 | Arrays & Strings | Arrays, string.h, safe input with fgets |
-| 6 | Pointers & Memory | Addresses, dereferencing, pass by reference |
-| 7 | Dynamic Memory | malloc, calloc, realloc, free, Valgrind |
-| 8 | Structs, Unions & Enums | typedef, arrow operator, tagged unions |
-| 9 | File I/O | Text/binary files, fread/fwrite |
-| 10 | Advanced C | Makefiles, Unit Testing, Macros, Debugging |
+| # | Chapter | Focus |
+|---|---|---|
+| 27 | Linux Kernel | kernel fundamentals |
+| 28 | Rust GUI | Rust desktop ecosystem |
+| 29 | Rust Practical Projects | project-based Rust practice |
+| 30 | System Programming | POSIX APIs and processes |
+| 31 | Linux Kernel Architecture | internals and subsystem thinking |
+| 32 | Systemd and Packaging | services, packaging, distribution |
+| 33 | System Calls and libc | libc, syscalls, low-level interfaces |
+| 34 | Advanced System Programming | fork, exec, pipes, signals |
+| 35 | Build Linux Distro | distro-building foundations |
+| 36 | Network Programming | sockets, servers, clients |
+| 37 | Systemd Service Management | writing and managing services |
+| 38 | Wayland and Iced | modern Linux desktop direction |
+| 39 | Building a Linux Distro | boot process and root filesystem |
+| 40 | COSMIC Desktop | COSMIC foundations |
+| 41 | Wayland Compositors | compositor concepts and protocols |
+| 42 | COSMIC Ecosystem | libraries, apps, and contribution paths |
+| 43 | Systems Capstone | larger systems project |
 
-### Phase 2 — GTK4 GUI Programming
-| # | Chapter | Key Topics |
-|---|---------|------------|
-| 11 | Introduction to GTK4 | GtkApplication, GObject, first window |
-| 12 | Widgets & Layouts | GtkBox, GtkGrid, custom widget derivation |
-| 13 | Signals & Callbacks | Event-driven model, GUI Concurrency |
-| 14 | Dialogs | GtkAlertDialog, GtkFileDialog, custom dialogs |
-| 15 | Drawing with Cairo | GtkDrawingArea, shapes, text, colors, animation |
-| 16 | GLib Utilities | GList, GHashTable, GString, timeouts |
-| 17 | CSS Styling | GTK CSS, classes, widget names, hover effects |
-| 18 | Complete GTK4 App | Makefiles, Meson, ListBox, HeaderBar, Notebook |
-| 19 | Advanced GTK4 | TextView, GMenu, GSettings, async GTask |
-| 20 | Capstone Project | Full Task Manager application |
+### Phase 5: Web Development
 
-### Phase 3 — Rust Programming
-| # | Chapter | Key Topics |
-|---|---------|------------|
-| 21 | Introduction to Rust | Installation, Cargo, variables, types, functions |
-| 22 | Ownership & Borrowing | Move semantics, references, lifetimes |
-| 23 | Structs & Enums | Methods, pattern matching, Option, Result |
-| 24 | Error Handling & Collections | Result, ?, Vec, HashMap, iterators |
-| 25 | Traits & Generics | Interfaces, generic functions, closures |
-| 26 | Concurrency, Macros & FFI | tokio, Unsafe Rust, C-Rust Integration |
+| # | Chapter | Focus |
+|---|---|---|
+| 44 | Web Fundamentals | HTML, CSS, JavaScript mental model |
+| 45 | Web Architecture | HTTP, APIs, and security basics |
+| 46 | HTML and CSS | semantic layout and responsive design |
+| 47 | React and Axum | full-stack application flow |
+| 48 | Modern JavaScript | ES6+, DOM, fetch, modules |
+| 49 | TypeScript | types for frontend code |
+| 50 | Frontend Frameworks | component patterns and framework thinking |
+| 51 | Backend with Node.js | REST basics and middleware |
+| 53 | Backend with Rust and Axum | Rust backend services |
+| 54 | Web Databases | persistence, SQL, and caching |
 
-### Phase 4 — Linux Internals & Custom Distro
-| # | Chapter | Key Topics |
-|---|---------|------------|
-| 27 | Linux Kernel | Architecture, building from source, kernel modules |
-| 28 | System & Container Internals | POSIX APIs, namespaces, cgroups |
-| 29 | Systemd & IPC | Init systems, service files, DBus |
-| 30 | Package Management | Building .deb packages, repositories |
-| 31 | Building a Distro | Linux From Scratch, Buildroot, Yocto |
-| 32 | Custom ISO | live-build, archiso, desktop customization |
+### Phase 6: Mobile Development
 
-### Phase 5 — COSMIC Desktop & Wayland
-| # | Chapter | Key Topics |
-|---|---------|------------|
-| 33 | Wayland Protocol | Architecture, surfaces, compositors vs X11 |
-| 34 | Iced Framework | Elm architecture, widgets, Sandbox trait |
-| 35 | COSMIC Architecture | libcosmic, cosmic-comp, app framework |
-| 36 | COSMIC Development | Building applets and full COSMIC applications |
+| # | Chapter | Focus |
+|---|---|---|
+| 52 | Flutter Mobile | introduction to Flutter mobile apps |
+| 55 | Dart Language | Dart syntax and async basics |
+| 56 | Flutter Fundamentals | widgets, layouts, local state |
+| 58 | Advanced Flutter | architecture, integration, offline-first thinking |
 
-### Phase 6 — Web Development (Full-Stack)
-| # | Chapter | Key Topics |
-|---|---------|------------|
-| 37 | HTML, CSS & TypeScript | Semantic HTML, CSS Grid, strict typing |
-| 38 | WebAssembly (Wasm) | Rust in the browser, wasm-bindgen |
-| 39 | React Frontend | Components, hooks, state management |
-| 40 | Rust Backend (Axum) | REST APIs, JSON, middleware |
-| 41 | Databases & Security | SQLx, JWT Auth, password hashing |
-| 42 | Full-Stack Capstone | Complete web app with auth, CRUD, deployment |
+### Phase 7: Delivery, DevOps, and Final Integration
 
-### Phase 7 — Mobile Development
-| # | Chapter | Key Topics |
-|---|---------|------------|
-| 43 | Flutter & Dart | Setup, Dart syntax, Material widgets |
-| 44 | State & Offline-First | Provider, local databases (SQLite/Isar) |
-| 45 | Mobile FFI | Running Rust inside Flutter (flutter_rust_bridge) |
-| 46 | Mobile Capstone | Full mobile app with API integration |
+| # | Chapter | Focus |
+|---|---|---|
+| 57 | Git, CI/CD, and DevOps | workflow and automation foundations |
+| 59 | DevOps | deployment, monitoring, operational thinking |
+| 60 | Grand Capstone | wide final project combining multiple tracks |
 
-### Phase 8 — Advanced Skills & DevOps
-| # | Chapter | Key Topics |
-|---|---------|------------|
-| 47 | Git Mastery | Branching, rebasing, bisect, conventional commits |
-| 48 | Docker & CI/CD | Containerization, GitHub Actions, deployment |
-| 49 | Architecture & Observability | Design patterns, logging, monitoring |
-| 50 | Open Source | Contributing to COSMIC, GTK, Linux projects |
+## Recommended Milestone Projects
 
-## 📖 Recommended Resources
+These are especially worth doing after the matching chapters:
 
-We have compiled a massive, curated list of the best books, free interactive courses, video tutorials, practice platforms, and official documentation for all 8 phases of this curriculum.
+- After Chapter 10: simple C library
+- After Chapter 18 or 20: simple GUI app
+- After Chapter 25: simple Rust library
+- After Chapter 29 or 48: simple game
+- After Chapter 36, 51, or 53: simple backend
+- After Chapter 43: simple compiler or simple GUI library as a stretch systems project
+- After Chapter 54: full-stack web app
+- After Chapter 56 or 58: mobile app
 
-👉 **[View the Master Reference Guide (Zero to Hero Resources)](REFERENCES.md)**
+See the full list in [PROJECTS.md](/C:/Users/Buggy/source/repos/my-Tout-Roadmap/PROJECTS.md).
 
-## 📄 License
+## References
+
+Additional learning material is stored in [REFERENCES.md](/C:/Users/Buggy/source/repos/my-Tout-Roadmap/REFERENCES.md) and the top-level [references](/C:/Users/Buggy/source/repos/my-Tout-Roadmap/references) folder.
+
+## Notes
+
+- The roadmap is broad by design.
+- The numbering is now unique across all chapter folders.
+- No chapters were removed.
+- The structure is intended to support both depth and experimentation.
+
+## License
 
 This educational material is provided for personal learning purposes.
-
----
-
-*Crafted by Ayman Salem — from the ground up, building systems that matter.*
-# my-Tout-Roadmap.
