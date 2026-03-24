@@ -1,6 +1,6 @@
 # Complete Developer Roadmap: From C to COSMIC and Beyond
 
-From zero to a wide, hands-on developer skill set. This repository is a broad 60-chapter curriculum covering C, GTK4, Rust, Linux internals, COSMIC desktop development, web development, Flutter, and DevOps.
+From zero to a wide, hands-on developer skill set. This repository is a broad 67-chapter curriculum covering C, GTK4, Rust, Linux internals, COSMIC desktop development, web development, Flutter, and DevOps.
 
 > Author: Ayman Salem
 >
@@ -109,37 +109,44 @@ Common tools used across the roadmap:
 | 42 | COSMIC Ecosystem | libraries, apps, and contribution paths |
 | 43 | Systems Capstone | larger systems project |
 
-### Phase 5: Web Development
+### Phase 5: Web Development and Solo Builder Stack
 
 | # | Chapter | Focus |
 |---|---|---|
 | 44 | Web Fundamentals | HTML, CSS, JavaScript mental model |
 | 45 | Web Architecture | HTTP, APIs, and security basics |
 | 46 | HTML and CSS | semantic layout and responsive design |
-| 47 | React and Axum | full-stack application flow |
-| 48 | Modern JavaScript | ES6+, DOM, fetch, modules |
-| 49 | TypeScript | types for frontend code |
+| 47 | Modern JavaScript | ES6+, DOM, fetch, modules |
+| 48 | TypeScript | types for frontend code |
+| 49 | Next.js | full-stack React framework for solo builders |
 | 50 | Frontend Frameworks | component patterns and framework thinking |
-| 51 | Backend with Node.js | REST basics and middleware |
+| 51 | React and Axum | full-stack application flow |
+| 52 | Backend with Node.js | REST basics and middleware |
 | 53 | Backend with Rust and Axum | Rust backend services |
-| 54 | Web Databases | persistence, SQL, and caching |
+| 54 | PostgreSQL | practical relational database foundations |
+| 55 | Prisma | schema, migrations, and ORM workflow |
+| 56 | Authentication and Authorization | sessions, tokens, roles, protected routes |
+| 57 | Payments and Billing | checkout, subscriptions, and billing flows |
+| 58 | Web Databases | persistence, SQL, caching, and data tradeoffs |
 
 ### Phase 6: Mobile Development
 
 | # | Chapter | Focus |
 |---|---|---|
-| 52 | Flutter Mobile | introduction to Flutter mobile apps |
-| 55 | Dart Language | Dart syntax and async basics |
-| 56 | Flutter Fundamentals | widgets, layouts, local state |
-| 58 | Advanced Flutter | architecture, integration, offline-first thinking |
+| 59 | Flutter Mobile | introduction to Flutter mobile apps |
+| 60 | Dart Language | Dart syntax and async basics |
+| 61 | Flutter Fundamentals | widgets, layouts, local state |
+| 62 | Advanced Flutter | architecture, integration, offline-first thinking |
 
 ### Phase 7: Delivery, DevOps, and Final Integration
 
 | # | Chapter | Focus |
 |---|---|---|
-| 57 | Git, CI/CD, and DevOps | workflow and automation foundations |
-| 59 | DevOps | deployment, monitoring, operational thinking |
-| 60 | Grand Capstone | wide final project combining multiple tracks |
+| 63 | Git, CI/CD, and DevOps | workflow and automation foundations |
+| 64 | Docker | containerized local development and deployment |
+| 65 | GitHub Actions | CI workflows, artifacts, and automation |
+| 66 | DevOps | deployment, monitoring, operational thinking |
+| 67 | Grand Capstone | wide final project combining multiple tracks |
 
 ## Recommended Milestone Projects
 
@@ -164,6 +171,7 @@ Additional learning material is stored in [REFERENCES.md](/C:/Users/Buggy/source
 
 - The roadmap is broad by design.
 - The numbering is now unique across all chapter folders.
+- The roadmap now includes a stronger solo-builder stack with dedicated chapters for Next.js, PostgreSQL, Prisma, Auth, Payments, Docker, and GitHub Actions.
 - No chapters were removed.
 - The structure is intended to support both depth and experimentation.
 

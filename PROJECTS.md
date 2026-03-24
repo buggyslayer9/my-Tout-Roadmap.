@@ -1,4 +1,4 @@
-﻿# Project Roadmap
+# Project Roadmap
 
 This roadmap stays wide on purpose. The best way to keep a wide roadmap useful is to place larger projects after the chapters that give you the right prerequisites.
 

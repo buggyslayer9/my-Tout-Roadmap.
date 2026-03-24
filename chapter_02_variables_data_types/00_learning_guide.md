@@ -1,4 +1,4 @@
-﻿# Chapter 02 Learning Guide: Variables Data Types
+# Chapter 02 Learning Guide: Variables Data Types
 
 ## Learning Goals
 - Understand the core ideas in Variables Data Types.
