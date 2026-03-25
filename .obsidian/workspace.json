@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter_02_variables_data_types/00_learning_guide.md",
-                "mode": "source",
+                "file": "chapter_02_variables_data_types/05_operators.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_learning_guide"
+              "title": "05_operators"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300.5
   },
   "right": {
     "id": "35143a15f2508a60",
@@ -185,6 +185,29 @@
   },
   "active": "ac4abc9603b9b385",
   "lastOpenFiles": [
+    "chapter_02_variables_data_types/01_data_types.md",
+    "chapter_02_variables_data_types/05_operators.md",
+    "chapter_02_variables_data_types/06_type_casting.md",
+    "chapter_02_variables_data_types/90_review_questions.md",
+    "chapter_02_variables_data_types/assignment_02.md",
+    "chapter_02_variables_data_types/93_debugging_review_and_extension.md",
+    "chapter_02_variables_data_types/assignment_02_bonus.md",
+    "chapter_02_variables_data_types/92_patterns_and_build_strategies.md",
+    "chapter_02_variables_data_types/91_common_mistakes.md",
+    "chapter_02_variables_data_types/04_constants.md",
+    "chapter_02_variables_data_types/execises/constants.exe",
+    "chapter_02_variables_data_types/execises/build/Debug/outDebug.exe",
+    "chapter_02_variables_data_types/execises/build/Debug/sizeof.o",
+    "chapter_02_variables_data_types/execises/build/Debug/constants.o",
+    "chapter_02_variables_data_types/execises/build/Debug/01.o",
+    "chapter_02_variables_data_types/execises/build/Debug",
+    "chapter_02_variables_data_types/execises/constants.c",
+    "chapter_02_variables_data_types/03_sizeof.md",
+    "chapter_02_variables_data_types/execises/sizeof.exe",
+    "chapter_02_variables_data_types/execises/build",
+    "chapter_02_variables_data_types/execises/sizeof.c",
+    "chapter_02_variables_data_types/02_unsigned_types.md",
+    "chapter_02_variables_data_types/00_learning_guide.md",
     "chapter_59_flutter_mobile/big_project_59_ideas.md",
     "chapter_59_flutter_mobile/mini_project_59_ideas.md",
     "chapter_59_flutter_mobile/assignment_59_levels.md",
@@ -197,29 +220,6 @@
     "chapter_30_system_programming/big_project_30_ideas.md",
     "chapter_30_system_programming/mini_project_30_ideas.md",
     "chapter_30_system_programming/assignment_30_levels.md",
-    "chapter_30_system_programming/93_debugging_review_and_extension.md",
-    "chapter_24_error_handling_collections/92_patterns_and_build_strategies.md",
-    "chapter_23_structs_enums/big_project_23_ideas.md",
-    "chapter_23_structs_enums/mini_project_23_ideas.md",
-    "chapter_15_drawing_cairo/mini_project_15_ideas.md",
-    "chapter_15_drawing_cairo/assignment_15_levels.md",
-    "chapter_15_drawing_cairo/93_debugging_review_and_extension.md",
-    "chapter_15_drawing_cairo/92_patterns_and_build_strategies.md",
-    "chapter_14_dialogs_message_boxes/big_project_14_ideas.md",
-    "chapter_14_dialogs_message_boxes/mini_project_14_ideas.md",
-    "chapter_14_dialogs_message_boxes/assignment_14_levels.md",
-    "chapter_14_dialogs_message_boxes/93_debugging_review_and_extension.md",
-    "chapter_14_dialogs_message_boxes/92_patterns_and_build_strategies.md",
-    "chapter_13_signals_callbacks/big_project_13_ideas.md",
-    "scripts/generate_specialized_chapter_content.ps1",
-    "chapter_65_github_actions",
-    "chapter_64_docker",
-    "scripts/generate_full_practice_scaffolding.ps1",
-    "scripts",
-    "chapter_57_payments",
-    "chapter_56_auth",
-    "chapter_55_prisma",
-    "chapter_54_postgresql",
-    "chapter_49_nextjs"
+    "chapter_30_system_programming/93_debugging_review_and_extension.md"
   ]
 }

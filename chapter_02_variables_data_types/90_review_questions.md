@@ -1,4 +1,4 @@
-﻿# Chapter 02 Review Questions: Variables Data Types
+# Chapter 02 Review Questions: Variables Data Types
 
 Use these questions after finishing the main lesson files.
 
